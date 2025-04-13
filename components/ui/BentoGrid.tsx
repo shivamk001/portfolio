@@ -1,5 +1,11 @@
+"use client";
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
+import { useState } from "react";
+import Lottie from "react-lottie";
+import animationData from '@/data/confetti.json';
+import { IoCopyOutline } from "react-icons/io5";
+import MagicButton from "./MagicButton";
 
 export const BentoGrid = ({
     className,
@@ -41,10 +47,18 @@ export const BentoGridItem = ({
     titleClassName?: string;
     spareImg?: string;
 }) => {
+
+    const [copied, setCopied]=useState(false);
+
+    const handleCopy=()=>{
+        navigator.clipboard.writeText('shivam.kesarwani001@gmail.com');
+        setCopied(true);
+    }
+
     return (
         <div
             className={cn(
-                "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-3xl relative bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none border-2",
+                "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
                 className,
             )}
 
@@ -87,12 +101,52 @@ export const BentoGridItem = ({
                     <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
                         {title}
                     </div>
+
+                    {id===3 && (
+                        <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+                            <div className="flex flex-col gap-3 lg:gap-8">
+                                {['React.js', 'Next.js', 'Typescript'].map((item)=>(
+                                    <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                                        {item}
+                                    </span>
+                                ))}
+                                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+                            </div>
+                            <div className="flex flex-col gap-3 lg:gap-8">
+                                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+                                {['Node.js', 'AWS', 'MongoDB'].map((item)=>(
+                                    <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                                        {item}
+                                    </span>
+                                ))}
+
+                            </div>
+                        </div>
+                    )}
+
+                    {id===6 && (
+                        <div className="mt-5 relative ">
+                            <div className={`absolute -bottom-5 right-0`}>
+                                <Lottie options={{
+                                    loop: copied,
+                                    autoplay: copied,
+                                    animationData: animationData,
+                                    rendererSettings: {
+                                        preserveAspectRatio: 'xMidYMid slice'
+                                    }
+                                }}
+                                />
+                            </div>
+                            <MagicButton
+                                title={copied?'EMail Copied':'Copy my Email'}
+                                icon={<IoCopyOutline/>}
+                                position='left'
+                                otherClasses='!bg-[#161a31]'
+                                handleClick={handleCopy}
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
-
-            <div className="transition duration-200 group-hover/bento:translate-x-2">
-
-
-            </div>
-        </div>)
-};
+        </div>
+)};
