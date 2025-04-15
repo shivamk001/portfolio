@@ -1,6 +1,5 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import { cn } from '@/utils/cn'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'

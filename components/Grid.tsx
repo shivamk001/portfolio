@@ -26,13 +26,4 @@ const Grid = () => {
     )
 }
 
-let items = [
-    {
-        id: 1,
-        title: 'Title1',
-        description: 'Description1',
-
-    }
-]
-
 export default Grid
