@@ -1,8 +1,14 @@
+'use client';
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+
+const redirect = () => {
+  window.open('https://github.com/shivamk001', '_blank', 'noopener,noreferrer');
+};
+
 
 const Hero = () => {
   return (
@@ -33,16 +39,16 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </h2>
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Turning Complex Logic into Scalable, Reliable Systems"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Shivam, a Full Stack Software Engineer based in India.
+            Hi! I&apos;m Shivam, a Software Engineer based in India.
           </p>
 
         <a href='#about'>
-          <MagicButton title='Show my Work' icon={<FaLocationArrow/>} position={'right'}/>
+          <MagicButton title='Show my Work' icon={<FaLocationArrow/>} position={'right'} handleClick={redirect}/>
         </a>
         </div>
       </div>

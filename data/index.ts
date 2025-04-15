@@ -49,7 +49,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
+        title: "Currently building a Voting App using SocketIO and Next.js",
         description: "The Inside Scoop",
         // className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,35 +72,35 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "https://github.com/adrianhajdin?tab=repositories",
+        title: "GitTix - Ticketing Reselling Platform",
+        des: "A Platform to buy and sell tickets.",
+        img: "/ticketResell.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/node.svg", "/mongodb.svg"],
+        link: "http://shivamkesarwani.in/",
     },
     {
         id: 2,
-        title: "Yoom - Video Conferencing App",
+        title: "Issue Tracker - Issue Reporting App",
         des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/zoom-clone",
+        img: "/issueTracker.png",
+        iconLists: ["/node.svg", "/mongodb.svg"],
+        link: "http://shivamkesarwani.in/issuetracker",
     },
     {
         id: 3,
-        title: "AI Image SaaS - Canva Application",
+        title: "CSV File Reader",
         des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/ai_saas_app",
+        img: "/csvfile.png",
+        iconLists: ["/node.svg"],
+        link: "https://csv-upload-9ljq.onrender.com/",
     },
     {
         id: 4,
-        title: "Animated Apple Iphone 3D Website",
+        title: "BuyBusy ECommerce Application",
         des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: "/p4.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "https://github.com/adrianhajdin/iphone",
+        img: "/buybusy.png",
+        iconLists: ["/re.svg", "/firebase.svg"],
+        link: "https://busybuy-shivamk001.netlify.app/",
     },
 ];
 
@@ -173,32 +173,32 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        title: "System Engineer - TCS",
+        desc: "Contributed in the end-to-end development of a mission critical data-intensive internal web application.",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+        title: "Backend Developer - Growlytics",
+        desc: "Contributed in the feature development of Growlytics Application.",
         className: "md:col-span-2", // change to md:col-span-2
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+        title: "Software Engineer - Kenscio",
+        desc: "Designed and developed Kenlyser to monitor email volumes. Contributed to the feature development of Growlytics Application.",
         className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
-    },
-    {
-        id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
-        className: "md:col-span-2",
         thumbnail: "/exp4.svg",
     },
+    // {
+    //     id: 4,
+    //     title: "Lead Frontend Developer",
+    //     desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    //     className: "md:col-span-2",
+    //     thumbnail: "/exp4.svg",
+    // },
 ];
 
 export const socialMedia = [
